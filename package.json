@@ -1,0 +1,65 @@
+{
+  "name": "rpgcore-node",
+  "description": "Full node with extended capabilities using rpgcore and RPGcoin",
+  "author": "Silence <silence@rpgcoin.gg>",
+  "version": "1.0.3",
+  "main": "./index.js",
+  "repository": "git://github.com/RPGCoin/rpgcore-node.git",
+  "homepage": "https://github.com/RPGCoin/rpgcore-node",
+  "bugs": {
+    "url": "https://github.com/RPGCoin/rpgcore-node/issues"
+  },
+  "bin": {
+    "rpgcore-node": "./bin/rpgcore-node",
+    "rpgd": "./bin/rpgd"
+  },
+  "scripts": {
+    "preinstall": "./scripts/download",
+    "verify": "./scripts/download --skip-rpgcoin-download --verify-rpgcoin-download",
+    "test": "mocha -R spec --recursive",
+    "regtest": "./scripts/regtest",
+    "jshint": "jshint --reporter=node_modules/jshint-stylish ./lib",
+    "coverage": "istanbul cover _mocha -- --recursive",
+    "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "tags": [
+    "rpgcoin",
+    "rpgnd"
+  ],
+  "dependencies": {
+    "async": "^2.5.0",
+    "rpgd-rpc": "rpgd-rpc",
+    "rpgcore-lib": "rpgcore-lib",
+    "body-parser": "^1.18.3",
+    "colors": "^1.1.2",
+    "commander": "^2.8.1",
+    "errno": "^0.1.4",
+    "express": "^4.16.3",
+    "liftoff": "^2.2.0",
+    "lru-cache": "^4.0.1",
+    "mkdirp": "0.5.1",
+    "path-is-absolute": "^1.0.0",
+    "semver": "^5.0.1",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1",
+    "zeromq": "^4.6.0"
+  },
+  "optionalDependencies": {
+    "bufferutil": "~1.2.1",
+    "utf-8-validate": "~4.0.1"
+  },
+  "devDependencies": {
+    "benchmark": "1.0.0",
+    "rpgcore-p2p": "rpgcore-p2p",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.1",
+    "istanbul": "^0.4.3",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.1.0",
+    "mocha": "^5.0.5",
+    "proxyquire": "^1.3.1",
+    "rimraf": "^2.4.2",
+    "sinon": "^4.4.8"
+  },
+  "license": "MIT"
+}

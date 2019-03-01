@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+var rpgcore = require('../lib/cli/rpgcore');
+rpgcore();
