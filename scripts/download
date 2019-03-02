@@ -6,7 +6,7 @@ root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.."
 platform=`uname -a | awk '{print tolower($1)}'`
 arch=`uname -m`
 version="2.0.0"
-url="https://github.com/RPGProject/rpgcoin/releases/download"
+url="https://github.com/RPGCoin/RPG-Core/releases/download"
 tag="2.0.0"
 
 if [ "${platform}" == "linux" ]; then
