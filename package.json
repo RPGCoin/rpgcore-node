@@ -28,8 +28,8 @@
   ],
   "dependencies": {
     "async": "^2.5.0",
-    "rpgd-rpc": "rpgd-rpc",
-    "rpgcore-lib": "rpgcore-lib",
+    "rpgd-rpc": "^1.0.1",
+    "rpgcore-lib": "^1.0.0",
     "body-parser": "^1.18.3",
     "colors": "^1.1.2",
     "commander": "^2.8.1",
