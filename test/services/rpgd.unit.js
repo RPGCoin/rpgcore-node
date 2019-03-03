@@ -769,7 +769,7 @@ describe('RPGcoin Service', function() {
         }
       };
       var rpgd = new RPGcoinService(config);
-      rpgd._getDefaultConf().rpcport.should.equal(8766);
+      rpgd._getDefaultConf().rpcport.should.equal(7210);
     });
     it('will get default rpc port for testnet', function() {
       var config = {
@@ -782,7 +782,7 @@ describe('RPGcoin Service', function() {
         }
       };
       var rpgd = new RPGcoinService(config);
-      rpgd._getDefaultConf().rpcport.should.equal(18766);
+      rpgd._getDefaultConf().rpcport.should.equal(17210);
     });
     it('will get default rpc port for regtest', function() {
       rpgcore.Networks.enableRegtest();
@@ -796,7 +796,7 @@ describe('RPGcoin Service', function() {
         }
       };
       var rpgd = new RPGcoinService(config);
-      rpgd._getDefaultConf().rpcport.should.equal(18766);
+      rpgd._getDefaultConf().rpcport.should.equal(17210);
     });
   });
 
