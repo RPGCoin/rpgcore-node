@@ -2,7 +2,7 @@
   "name": "rpgcore-node",
   "description": "Full node with extended capabilities using rpgcore and RPGcoin",
   "author": "Silence <silence@rpgcoin.gg>",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "./index.js",
   "repository": "git://github.com/RPGCoin/rpgcore-node.git",
   "homepage": "https://github.com/RPGCoin/rpgcore-node",

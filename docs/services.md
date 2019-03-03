@@ -20,9 +20,9 @@ Services correspond with a Node.js module as described in 'package.json', for ex
 ```json
 {
   "dependencies": {
-    "rpgcore-lib": "rpgcore-lib",
-    "rpgcore-node": "rpgcore-node",
-    "insight-api-rpg": "insight-api-rpg"
+    "rpgcore-lib": "^1.0.2",
+    "rpgcore-node": "^1.0.8",
+    "insight-api-rpg": "^1.0.0"
   }
 }
 ```
